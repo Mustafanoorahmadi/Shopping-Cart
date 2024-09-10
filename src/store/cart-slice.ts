@@ -41,7 +41,9 @@ export const cartSlice = createSlice({
         state.items.splice(itemIndex, 1);
       } else {
         state.items[itemIndex].quantity--;
-      }
+      } 
     },
   },
 });
+
+export const { addToCart, removeFromCart } = cartSlice.actions
